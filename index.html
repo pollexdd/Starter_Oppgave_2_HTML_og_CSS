@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>CSS Box Model</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Hiof Webapplikasjoner" />
     <meta name="author" content="Hiof Webapplikasjoner" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="utf-8" />
-    <!-- Link til css -->
+    <title>CSS Box Model</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
@@ -17,9 +17,70 @@
           <li><a href="/about.html">About</a></li>
         </ul>
       </nav>
+      <h2>User user</h2>
     </header>
     <main>
-      <form method="post" action="/post_here"></form>
+      <form method="post" action="/post_here">
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input type="text" id="title" name="title" />
+        </div>
+        <div class="form-group">
+          <label for="content">Content</label>
+          <input type="text" id="content" name="content" />
+        </div>
+        <div class="form-group button-container">
+          <input type="submit" value="Add" class="add" />
+        </div>
+      </form>
+      <div class="todos-container">
+        <h2>My todos</h2>
+        <section class="grid1">
+          <article class="grid-item">
+            <div class="left-content">
+              <h3>Card 1</h3>
+              <p>hei</p>
+            </div>
+            <input type="submit" value="Complete" class="complete" />
+          </article>
+          <article class="grid-item">
+            <div class="left-content">
+              <h3>Card 2</h3>
+              <p>hei</p>
+            </div>
+            <input type="submit" value="Complete" class="complete" />
+          </article>
+          <article class="grid-item">
+            <div class="left-content">
+              <h3>Card 3</h3>
+              <p>hei</p>
+            </div>
+            <input type="submit" value="Complete" class="complete" />
+          </article>
+          <article class="grid-item">
+            <div class="left-content">
+              <h3>Card 4</h3>
+              <p>hei</p>
+            </div>
+            <input type="submit" value="Complete" class="complete" />
+          </article>
+          <article class="grid-item">
+            <div class="left-content">
+              <h3>Card 5</h3>
+              <p>hei</p>
+            </div>
+            <input type="submit" value="Complete" class="complete" />
+          </article>
+          <article class="grid-item">
+            <div class="left-content">
+              <h3>Card 6</h3>
+              <p>hei</p>
+            </div>
+            <input type="submit" value="Complete" class="complete" />
+          </article>
+        </section>
+      </div>
     </main>
+    <footer>My company</footer>
   </body>
 </html>
